@@ -1,0 +1,80 @@
+.heading-primary {
+  color: $white;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  margin-bottom: 6rem;
+ 
+   &--main {
+     display: block;
+     font-size: 6rem;
+     font-weight: 400;
+     letter-spacing: 3.5rem;
+     animation-name: moveInLeft;
+     animation-duration: 1s;
+     animation-timing-function: ease-out;
+   }
+ 
+   &--sub {
+     display: block;
+     font-size: 2rem;
+     font-weight: 700;
+     letter-spacing: 1.75rem;
+     animation: moveInRight 1s ease-in;
+   }
+ }
+ 
+ .btn {
+   &:link,
+   &:visited {
+     text-transform: uppercase;
+     text-decoration: none;
+     padding: 1.5rem 4rem;
+     display: inline-block;
+     border-radius: 10rem;
+     transition: all .2s; 
+     position: relative;
+     font-size: 1.6rem;
+   }
+ 
+   &--white {
+     background-color: $white;
+     color: $boulder;
+ 
+     &::after {
+       background-color: $white;
+     }
+   }
+ 
+   &:hover {
+     transform: translateY(-3px);
+     box-shodow: 0 1rem 2rem rgba($black,.2);
+ 
+     &::after {
+       transform: scaleX(1.4) scaleY(1.6);
+       opacity: 0;
+     }
+   }
+ 
+   &:active {
+     transform: translateY(-1px);
+     box-shodow: 0 .5rem 1rem rgba($black,.2);
+   }
+ 
+   &::after {
+     content: "";
+     display: inline-block;
+     height: 100%;
+     width: 100%;
+     border-radius: 10rem;
+     position: absolute;
+     top: 0;
+     left: 0;
+     z-index: -1;
+     transition: all .4s;
+   }
+ 
+   &--animated {
+     animation: moveInBottom .5s ease-out .75s;
+     animation-fill-mode: backwords;
+   }
+ }
