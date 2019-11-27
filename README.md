@@ -1,2 +1,2 @@
 # Css-and-Sass-learning-challenge
-css and sass öğrenme projesi
+Udemy ders tekrarı/Css and Sass öğrenme projesi
