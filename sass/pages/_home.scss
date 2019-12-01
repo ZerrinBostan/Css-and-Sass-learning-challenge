@@ -12,4 +12,17 @@
     rgba($jungle-green, 0.8)),
   url('../img/nat-4.jpg');
   background-size:cover;
+  transform: skewY(-7deg);
+  margin-top: -10rem;
+  
+  //section-features > all the children element
+  & > * {
+    transform: skewY(7deg);
+  }
+}
+
+.section-tours {
+  background-color: $alabaster;
+  padding: 25rem 0 50rem 0;
+  margin-top: -10rem;
 }
